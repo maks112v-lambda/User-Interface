@@ -58,7 +58,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family: 'Roboto', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
@@ -70,11 +70,19 @@ h1, h2, h3, h4, h5 {
 	margin: 0px auto;
 }
 
+header {
+	position: fixed;
+	top: 0;
+	background-color: #F5F5F5;
+	padding: 10px 10px;
+}
+
 header nav {
 	width: 675px;
 	vertical-align: top;
 	margin-top: 25px;
 	display: inline-block;
+
 }
 
 header nav a {
@@ -103,6 +111,7 @@ header nav a {
 .header div h1 {
 	font-size: 80px;
 	text-align: center;
+	font-weight: 300;
 }
 
 .header div button {
@@ -112,6 +121,11 @@ header nav a {
 	background-color: white;
 	border: 2px solid black;
 	text-decoration: none;
+	transition-duration: 1s;
+}
+
+.header div button:hover {
+	transform: scale(1.3);
 }
 
 .about{
